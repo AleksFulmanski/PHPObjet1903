@@ -6,13 +6,7 @@
 
 //pour eviter de repeter les require fonction autoloader existe
 
-function autoloader_perso($className){
-	var_dump($className);
-	require ('Classes/' . $className . '.php');
-
-}
-
-spl_autoload_register('autoloader_perso');
+require('autoloader.php');
 
 
 echo 'Bonjour';
@@ -23,16 +17,16 @@ $hamac = new Product();
 
 //changement des valeurs des propriétés avec ->
 
-$hamac->name = 'Hamac';
-$hamac->description = 'Pour se reposer';
-$hamac->price = 50.99;
+$hamac->setName('Hamac');
+$hamac->setDescription('Pour se reposer');
+$hamac->setPrice(50.99);
 var_dump($hamac);
 
 
 $parasol = new Product();
-$parasol->name = 'Parasol';
-$parasol->description = 'Pour se proteger du soleil';
-$parasol->price = 40;
+$parasol->setName('Parasol');
+$parasol->setDescription('Pour se proteger du soleil');
+$parasol->setPrice(40);
 
 
 //debug du parasol
