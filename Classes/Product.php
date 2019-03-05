@@ -27,7 +27,7 @@ public function getName()
 	return $this->name;
 }
 
-public function setName(string $nouveauNom)
+public function setName(string $nouveauNom): void
 {
 	$this->name = $nouveauNom;
 }
@@ -53,7 +53,7 @@ public function getDescription()
 	return $this->description;
 }
 
-public function setDescription(string $nouveauDescription)
+public function setDescription(string $nouveauDescription): void
 {
 	$this->description = $nouveauDescription;
 }

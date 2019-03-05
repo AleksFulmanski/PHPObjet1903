@@ -1,4 +1,5 @@
 <?php require('autoloader.php');
+
 $formUtility = new FormUtility();
 
 
@@ -10,9 +11,9 @@ $formUtility = new FormUtility();
 <main class="container">
     <h1>Création d'un nouveau produit</h1>
     <form method="post">
-        <?= $formUtility->generateHTML('Nom du produit');?>
-        <?= $formUtility->generateHTML('Prix du produit');?>
-        <?= $formUtility->generateHTML('Description');?>
+        <?= $formUtility->generateHTML('Nom du produit', 'text', 'name', 'Saisir le nom');?>
+        <?= $formUtility->generateHTML('Prix du produit', 'number', 'price', 'Saisir le prix');?>
+        <?= $formUtility->generateHTML('Description', 'textarea', 'description', 'Saisir la description'); ?>
 
 
 
