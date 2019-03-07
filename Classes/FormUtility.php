@@ -54,7 +54,7 @@ private function getHTMLInput(
  	?string $placeholder = '') : string {
 	
 	return <<<EOT
-	<input type="$type" 
+<input type="$type" 
 id="$id" 
 name="$id" class="form-control" 
 placeholder="$placeholder" 
@@ -69,7 +69,7 @@ private function getHTMLTextarea(
  	?string $placeholder = '') : string {
 	
 	return <<<EOT
-	<textarea name="$id" class="form-control" placeholder="$placeholder">$oldValue</textarea>
+<textarea name="$id" class="form-control" placeholder="$placeholder">$oldValue</textarea>
 EOT;
 
  }

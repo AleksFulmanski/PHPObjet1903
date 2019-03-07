@@ -5,10 +5,7 @@
 //on incluera donc ce fichier dans chaque fichier 
 //qui utilisera une classe se truvant dans le dossier Classes
 
-function autoloader_perso($className){
-	var_dump($className);
-	require ('Classes/' . $className . '.php');
-
+function autoloader_perso($className) {
+    require_once('Classes/' . $className . '.php');
 }
-
 spl_autoload_register('autoloader_perso');
